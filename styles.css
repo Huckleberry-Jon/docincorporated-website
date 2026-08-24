@@ -1146,3 +1146,105 @@ main {
         min-height: 350px;
     }
 }
+
+/* =========================
+   VOICE TO ACTION
+========================= */
+
+.future > *:not(.future-mark) {
+    position: relative;
+    z-index: 2;
+}
+
+.future-points {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin-top: 58px;
+}
+
+.future-point {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    padding: 34px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 20px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 138, 0, 0.045),
+            rgba(255, 255, 255, 0.018) 42%,
+            rgba(255, 255, 255, 0.01)
+        );
+    box-shadow:
+        0 24px 70px rgba(0, 0, 0, 0.24),
+        inset 0 1px rgba(255, 255, 255, 0.035);
+}
+
+.future-point::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 34px;
+    width: 52px;
+    height: 2px;
+    background: #ff8a00;
+    box-shadow: 0 0 20px rgba(255, 138, 0, 0.48);
+}
+
+.future-point-number {
+    color: #ff8a00;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+}
+
+.future-point strong {
+    margin-top: 62px;
+    font-size: clamp(18px, 1.6vw, 23px);
+    line-height: 1.15;
+    letter-spacing: 0.08em;
+}
+
+.future-point-description {
+    max-width: 300px;
+    margin-top: 17px;
+    color: #8f99a8;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.future .future-tagline {
+    max-width: none;
+    margin-top: 44px;
+    color: #d3d8df;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+@media (max-width: 800px) {
+
+    .future-points {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 44px;
+    }
+
+    .future-point {
+        min-height: 220px;
+        padding: 30px;
+    }
+
+    .future-point::before {
+        left: 30px;
+    }
+
+    .future-point strong {
+        margin-top: 48px;
+    }
+}
