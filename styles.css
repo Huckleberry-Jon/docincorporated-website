@@ -1196,6 +1196,19 @@ main {
     box-shadow: 0 0 20px rgba(255, 138, 0, 0.48);
 }
 
+.future-point-icon {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    width: 78px;
+    height: 78px;
+    object-fit: contain;
+    opacity: 0.92;
+    filter:
+        drop-shadow(0 12px 20px rgba(0, 0, 0, 0.42))
+        drop-shadow(0 0 18px rgba(255, 138, 0, 0.2));
+}
+
 .future-point-number {
     color: #ff8a00;
     font-size: 11px;
