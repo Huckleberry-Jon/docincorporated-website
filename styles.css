@@ -1200,8 +1200,11 @@ main {
     position: absolute;
     top: 28px;
     right: 28px;
-    width: 78px;
-    height: 78px;
+    display: block;
+    width: 84px;
+    height: 84px;
+    max-width: 84px;
+    max-height: 84px;
     object-fit: contain;
     opacity: 0.92;
     filter:
