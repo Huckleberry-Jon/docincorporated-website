@@ -681,7 +681,21 @@ main {
 @media (max-width: 520px) {
 
     .navigation {
+        display: flex;
+    }
+
+    .navigation a {
         display: none;
+    }
+
+    .navigation a:last-child {
+        display: inline-flex;
+        align-items: center;
+        min-height: 42px;
+        padding: 0 16px;
+        border: 1px solid #ff8a00;
+        border-radius: 10px;
+        color: #ff8a00;
     }
 
     .value-grid {
