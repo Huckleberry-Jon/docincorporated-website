@@ -1,0 +1,28 @@
+.legal-page .site-header { position: relative; flex-wrap: wrap; gap: 24px; background: #080c12; border-bottom: 1px solid #252b34; }
+.legal-nav, .legal-links { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: 1rem; }
+.legal-nav a, .legal-links a { padding: 8px 0; }
+.legal-nav a[aria-current="page"] { color: #ff9b27; }
+.legal-content { width: min(100% - 40px, 800px); margin: 0 auto; padding: 64px 0 80px; min-height: auto; color: #d3d8df; font-size: 1rem; line-height: 1.8; overflow-wrap: anywhere; }
+.legal-content h1 { color: #fff; font-size: clamp(2.25rem, 7vw, 3.5rem); line-height: 1.15; letter-spacing: -0.035em; margin: 12px 0 20px; }
+.legal-content h2 { color: #fff; font-size: 1.35rem; line-height: 1.4; margin: 40px 0 12px; }
+.legal-content p, .legal-content ul { margin: 0 0 18px; }
+.legal-content li { margin-bottom: 10px; }
+.legal-content ul { padding-left: 24px; }
+.legal-content .eyebrow { color: #ff9b27; font-size: .875rem; letter-spacing: .14em; }
+.legal-content .legal-date { color: #aeb8c6; font-size: .9375rem; padding-bottom: 24px; border-bottom: 1px solid #252b34; }
+.legal-content a, .legal-links a { color: #ffad4d; text-decoration: underline; text-underline-offset: 4px; }
+.legal-links { justify-content: center; margin: 20px 0; }
+.legal-page a:focus-visible, .legal-links a:focus-visible { outline: 2px solid #ffad4d; outline-offset: 5px; }
+.skip-link { position: absolute; top: -100px; left: 20px; z-index: 200; background: #fff; color: #05070b; padding: 12px; }
+.skip-link:focus { top: 12px; }
+@media (max-width: 520px) {
+    .legal-page .site-header { padding: 20px; }
+    .legal-page .logo-text { font-size: .8125rem; letter-spacing: .08em; }
+    .legal-content { padding-top: 40px; }
+}
+@media print {
+    .legal-page { background: white; color: black; }
+    .legal-page .site-header, .legal-page .site-footer, .skip-link { display: none; }
+    .legal-content { width: 100%; padding: 0; color: black; }
+    .legal-content h1, .legal-content h2, .legal-content a, .legal-content .legal-date, .legal-content .eyebrow { color: black; }
+}
