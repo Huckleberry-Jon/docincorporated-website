@@ -1278,3 +1278,84 @@ main {
         margin-top: 48px;
     }
 }
+
+
+/* Doc Family catalog: scalable grid for current and future products */
+.family-catalog {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    width: 100%;
+    max-width: 1320px;
+    margin: 56px auto 0;
+}
+.family-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 32px;
+    border: 1px solid rgba(255,255,255,.13);
+    border-radius: 22px;
+    background: linear-gradient(145deg, rgba(255,255,255,.065), rgba(255,255,255,.018));
+}
+.family-product-featured {
+    border-color: rgba(255,138,0,.48);
+    background: linear-gradient(145deg, rgba(255,138,0,.11), rgba(255,255,255,.025));
+}
+.family-product-next {
+    border-style: dashed;
+}
+.family-product-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+.family-category {
+    color: #ff9e2f;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .14em;
+}
+.family-status {
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 999px;
+    padding: 6px 10px;
+    color: rgba(255,255,255,.82);
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.family-status-available { border-color: rgba(94,210,143,.45); color: #9ce4ba; }
+.family-status-demo, .family-status-pilot { border-color: rgba(255,158,47,.4); color: #ffc582; }
+.family-product h3 {
+    margin: 0 0 14px;
+    font-size: clamp(25px, 2.4vw, 36px);
+    line-height: 1.15;
+    letter-spacing: -.04em;
+}
+.family-product p {
+    margin: 0 0 24px;
+    color: rgba(255,255,255,.7);
+    font-size: 15px;
+    line-height: 1.7;
+}
+.family-product-link, .family-product-note {
+    margin-top: auto;
+    font-size: 13px;
+    font-weight: 800;
+}
+.family-product-link { color: #ff9e2f; }
+.family-product-link:hover, .family-product-link:focus-visible { text-decoration: underline; }
+.family-product-note { color: rgba(255,255,255,.5); }
+@media (max-width: 1000px) {
+    .family-catalog { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 650px) {
+    .family-catalog { grid-template-columns: 1fr; gap: 14px; margin-top: 32px; }
+    .family-product { padding: 24px; }
+}
