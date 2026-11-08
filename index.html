@@ -120,14 +120,56 @@
             <a href="https://docinvoices.com" class="family-product-link" target="_blank" rel="noopener noreferrer">Explore DocInvoices <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="family-product">
+        <article class="family-product family-product-fleet" id="docfleet">
             <div class="family-product-top">
-                <span class="family-category">FLEET &amp; EQUIPMENT</span>
-                <span class="family-status family-status-demo">Interactive demo</span>
+                <span class="family-category">FLEET, EQUIPMENT &amp; ASSET MANAGEMENT</span>
+                <span class="family-status family-status-demo">Interactive fleet demo</span>
             </div>
             <h3>DocFleet</h3>
-            <p>Multi-location fleet and equipment oversight, inspections, maintenance, work orders, and asset history. The interactive preview uses sample data; the full platform is in development.</p>
-            <a href="https://docfleet-fleet-review.jondavidcompton.chatgpt.site/" class="family-product-link" target="_blank" rel="noopener noreferrer">View DocFleet demo <span aria-hidden="true">→</span></a>
+            <p class="fleet-lead">One platform for the assets that keep your business running — whether they have wheels, tracks, blades, or forks.</p>
+            <p>Designed for transportation, landscaping, construction, industrial operations, and equipment contractors. Organize assets, locations, inspections, maintenance, and repair history without maintaining different systems for each industry.</p>
+            <div class="fleet-industries" aria-label="Industries DocFleet is being designed for">
+                <a class="fleet-industry" href="#fleet-transportation">
+                    <span class="fleet-industry-art" aria-hidden="true">
+                        <svg viewBox="0 0 180 78" role="img" focusable="false"><rect x="17" y="20" width="97" height="38" rx="5" fill="#a4b4c6"/><rect x="120" y="31" width="33" height="27" rx="4" fill="#ef9943"/><path d="M123 30 L141 30 L154 44 L154 57 L123 57 Z" fill="#ef9943"/><rect x="135" y="35" width="13" height="11" fill="#26374c"/><circle cx="46" cy="60" r="10" fill="#182437" stroke="#d7e1e9" stroke-width="4"/><circle cx="102" cy="60" r="10" fill="#182437" stroke="#d7e1e9" stroke-width="4"/><circle cx="139" cy="60" r="10" fill="#182437" stroke="#d7e1e9" stroke-width="4"/></svg>
+                    </span>
+                    <strong>Transportation</strong>
+                    <span>Trucks, trailers &amp; service vehicles</span>
+                </a>
+                <a class="fleet-industry" href="#fleet-construction">
+                    <span class="fleet-industry-art" aria-hidden="true">
+                        <svg viewBox="0 0 180 78" role="img" focusable="false"><rect x="30" y="53" width="100" height="14" rx="7" fill="#2b3b4c"/><rect x="48" y="28" width="48" height="29" rx="5" fill="#efa53f"/><path d="M62 30 H83 V46 H62 Z" fill="#34495f"/><path d="M92 27 L128 12 L153 33 L145 39 L126 27 L109 40 L96 43" fill="none" stroke="#efa53f" stroke-width="10" stroke-linejoin="round"/><path d="M145 35 L163 43 L149 55 Z" fill="#efa53f"/><circle cx="45" cy="60" r="5" fill="#9daebe"/><circle cx="114" cy="60" r="5" fill="#9daebe"/></svg>
+                    </span>
+                    <strong>Construction</strong>
+                    <span>Excavators, skid steers &amp; loaders</span>
+                </a>
+                <a class="fleet-industry" href="#fleet-landscaping">
+                    <span class="fleet-industry-art" aria-hidden="true">
+                        <svg viewBox="0 0 180 78" role="img" focusable="false"><rect x="35" y="46" width="94" height="14" rx="5" fill="#5b985f"/><rect x="66" y="31" width="40" height="21" rx="5" fill="#79b66b"/><rect x="99" y="18" width="6" height="25" rx="3" fill="#c5d4de"/><rect x="90" y="16" width="21" height="5" rx="2" fill="#c5d4de"/><path d="M40 47 H27 L17 61 H39" stroke="#79b66b" stroke-width="7" fill="none"/><circle cx="54" cy="62" r="13" fill="#1d2b38" stroke="#d7e2df" stroke-width="4"/><circle cx="116" cy="62" r="10" fill="#1d2b38" stroke="#d7e2df" stroke-width="4"/></svg>
+                    </span>
+                    <strong>Landscaping</strong>
+                    <span>Commercial mowers, tractors &amp; tools</span>
+                </a>
+                <a class="fleet-industry" href="#fleet-industrial">
+                    <span class="fleet-industry-art" aria-hidden="true">
+                        <svg viewBox="0 0 180 78" role="img" focusable="false"><rect x="48" y="38" width="76" height="22" rx="5" fill="#e8a44a"/><rect x="68" y="19" width="37" height="28" rx="3" fill="#728aa0"/><path d="M113 16 V64 H157 V60 H124 V16" stroke="#d7dce2" stroke-width="6" fill="none"/><circle cx="70" cy="62" r="10" fill="#1c2b3b" stroke="#c9d3dc" stroke-width="4"/><circle cx="113" cy="62" r="8" fill="#1c2b3b" stroke="#c9d3dc" stroke-width="3"/></svg>
+                    </span>
+                    <strong>Industrial</strong>
+                    <span>Forklifts, generators &amp; facility assets</span>
+                </a>
+            </div>
+            <div class="fleet-capabilities">
+                <p class="fleet-capabilities-heading">One shared platform, industry-specific examples</p>
+                <div class="fleet-use-case-list">
+                    <div id="fleet-transportation"><strong>Transportation</strong><span>Trailer condition checks, VIN-based asset records, yard transfers</span></div>
+                    <div id="fleet-construction"><strong>Construction</strong><span>Engine-hour maintenance, machine inspections, jobsite assignments</span></div>
+                    <div id="fleet-landscaping"><strong>Landscaping</strong><span>Mower service intervals, crew equipment assignment, defect reporting</span></div>
+                    <div id="fleet-industrial"><strong>Industrial</strong><span>Forklift inspections, location tracking, service history</span></div>
+                </div>
+            </div>
+            <p class="fleet-future"><strong>Planned:</strong> Optional Shop &amp; Parts modules, including in-house repair workflows and inventory tracking. These modules are not yet verified for release.</p>
+            <p class="fleet-demo-notice">The linked interactive preview currently shows a trailer-focused scenario with <strong>fictional demonstration data</strong>. It does not yet include the newer equipment-specific interface, nor all of the capabilities described above.</p>
+            <a href="https://docfleet-fleet-review.jondavidcompton.chatgpt.site/" class="family-product-link" target="_blank" rel="noopener noreferrer">Explore the current fleet demo <span aria-hidden="true">→</span></a>
         </article>
 
         <article class="family-product">
