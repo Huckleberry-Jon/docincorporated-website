@@ -1449,3 +1449,25 @@ main {
 @media (max-width: 380px) {
     .fleet-industries { grid-template-columns: 1fr; }
 }
+
+/* Two-page navigation and responsive refinements */
+.navigation a[aria-current="page"] { color: #ff9e2f; }
+.family-teaser { padding: 100px 8vw 115px; }
+.family-teaser .section-heading { max-width: 850px; }
+.family-teaser .button { display: inline-flex; margin-top: 26px; }
+.products-page .products-intro { padding: 175px 8vw 30px; background: radial-gradient(circle at 80% 10%, rgba(255,138,0,.10), transparent 35%); }
+.products-intro h1 { margin: 0; font-size: clamp(48px, 7vw, 92px); line-height: 1; letter-spacing: -.055em; }
+.products-intro h1 span { color: #ff8a00; }
+.products-intro > p:last-child { color: #b2bbc7; max-width: 700px; font-size: clamp(16px, 2vw, 20px); line-height: 1.65; }
+.products-page .family { padding-top: 35px; }
+.products-page .family .section-heading { display: none; }
+@media (max-width: 800px) {
+ .site-header { position: relative; padding: 16px 5vw; gap: 16px; flex-wrap: wrap; background: #080c12; border-bottom: 1px solid rgba(255,255,255,.1); }
+ .site-header .logo { flex: 1 1 auto; }
+ .site-header .navigation { flex: 1 1 100%; display: flex; gap: 8px 16px; flex-wrap: wrap; align-items: center; font-size: 12px; }
+ .navigation a { padding: 8px 0; }
+ .hero { min-height: 78vh; padding-top: 90px; }
+ .products-page .products-intro { padding-top: 65px; }
+ .family-teaser { padding: 75px 7vw; }
+}
+@media (max-width: 380px) { .logo-text { font-size: 11px; } .site-header .navigation { gap: 5px 12px; } }
